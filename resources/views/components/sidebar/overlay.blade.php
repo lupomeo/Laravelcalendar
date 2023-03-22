@@ -8,4 +8,5 @@
     x-show="isSidebarOpen"
     x-on:click="isSidebarOpen = false"
     class="fixed inset-0 z-20 bg-black/50 lg:hidden"
+    style="background:black;"
  ></div>

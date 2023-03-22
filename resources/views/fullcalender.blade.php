@@ -26,11 +26,11 @@
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Titolo:</label>
-                                    <input type="text" name="title" class="form-control" placeholder="Enter event title" maxlength="200" required id="id_title">
+                                    <input type="text" name="title" class="form-control" placeholder="Titolo" maxlength="200" required id="id_title">
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Descrizione:</label>
-                                    <textarea name="description" cols="40" rows="10" class="form-control" placeholder="Enter event description" required id="id_description">
+                                    <textarea name="description" cols="40" rows="10" class="form-control" placeholder="Descrizione" required id="id_description">
                                     </textarea>
                                 </div>
                                 <div class="form-group">
@@ -43,9 +43,9 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button id="modalClose2" type="button" class="btn btn-secondary" style="background:grey;">Annulla</button>
-                                <button id="modalClose3" type="button" class="btn btn-danger" onclick="deleteFunc()" style="background:red;">Elimina</button>
-                                <button type="submit" class="btn btn-primary" style="background:blue;">Salva</button>
+                                <button id="modalClose2" type="button" class="btn btn-secondary" >Annulla</button>
+                                <button id="modalClose3" type="button" class="btn btn-danger" onclick="deleteFunc()">Elimina</button>
+                                <button type="submit" class="btn btn-primary">Salva</button>
                             </div>
                         </form>
                     </div>

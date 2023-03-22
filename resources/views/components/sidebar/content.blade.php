@@ -6,6 +6,10 @@
 
     <x-sidebar.link
         title="Dashboard"
+        style="background: #1F2937; color:#9CA3AF;"
+        onmouseover="this.style.background='#374151'"
+        onmouseout="this.style.background='#1F2937'"
+        
         href="{{ route('dashboard') }}"
         :isActive="request()->routeIs('dashboard')"
     >
@@ -16,6 +20,9 @@
 
     <x-sidebar.link
         title="Appuntamenti"
+        style="background: #1F2937; color:#9CA3AF;"
+        onmouseover="this.style.background='#374151'"
+        onmouseout="this.style.background='#1F2937'"
         href="{{ route('fullcalender') }}"
         :isActive="request()->routeIs('fullcalender')"
     >
@@ -24,30 +31,7 @@
         </x-slot>
     </x-sidebar.link>
 
-    <x-sidebar.dropdown
-        title="Buttons"
-        :active="Str::startsWith(request()->route()->uri(), 'buttons')"
-    >
-        <x-slot name="icon">
-            <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
-        </x-slot>
-
-        <x-sidebar.sublink
-            title="Text button"
-            href="{{ route('buttons.text') }}"
-            :active="request()->routeIs('buttons.text')"
-        />
-        <x-sidebar.sublink
-            title="Icon button"
-            href="{{ route('buttons.icon') }}"
-            :active="request()->routeIs('buttons.icon')"
-        />
-        <x-sidebar.sublink
-            title="Text with icon"
-            href="{{ route('buttons.text-icon') }}"
-            :active="request()->routeIs('buttons.text-icon')"
-        />
-    </x-sidebar.dropdown>
+    
 
    
 
