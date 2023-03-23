@@ -1,13 +1,9 @@
 <x-app-layout>
     <x-slot name="header">
-        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <h2 class="text-xl font-semibold leading-tight">
-                {{ __('Gestione appuntamenti') }}
-            </h2>
-        </div>
+        
     </x-slot>
   
-<div class="container" style="padding:0px;">
+<div class=container border" style=" padding-top:15px; padding-bottom:15px; background:white;">
     
     <div id='calendar'></div>
 </div>
@@ -160,7 +156,7 @@
                     alert("Errore nell'inserimento dati.");
                 }
             });
-        }); 
+      }); 
     function displayMessage(message) {
         toastr.success(message, 'Event');
       }

@@ -8,49 +8,11 @@
     }" style="height:50px;">
 
     <div class="flex items-center gap-3">
-        <x-button
-            type="button"
-            class="md:hidden"
-            icon-only
-            variant="secondary"
-            sr-text="Toggle dark mode"
-            x-on:click="toggleTheme"
-        >
-            <x-heroicon-o-moon
-                x-show="!isDarkMode"
-                aria-hidden="true"
-                class="w-6 h-6"
-            />
-
-            <x-heroicon-o-sun
-                x-show="isDarkMode"
-                aria-hidden="true"
-                class="w-6 h-6"
-            />
-        </x-button>
+        
     </div>
 
     <div class="flex items-center gap-3">
-        <x-button
-            type="button"
-            class="hidden md:inline-flex"
-            icon-only
-            variant="secondary"
-            sr-text="Toggle dark mode"
-            x-on:click="toggleTheme"
-        >
-            <x-heroicon-o-moon
-                x-show="!isDarkMode"
-                aria-hidden="true"
-                class="w-6 h-6"
-            />
-
-            <x-heroicon-o-sun
-                x-show="isDarkMode"
-                aria-hidden="true"
-                class="w-6 h-6"
-            />
-        </x-button>
+        
 
         <x-dropdown align="right" width="48">
             <x-slot name="trigger">
