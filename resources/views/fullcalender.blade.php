@@ -3,7 +3,7 @@
         
     </x-slot>
   
-<div class=container border" style=" padding-top:15px; padding-bottom:15px; background:white;">
+<div class=container border" style="padding-left:30px;padding-right:30px; padding-top:15px; padding-bottom:15px; background:white;">
     
     <div id='calendar'></div>
 </div>
@@ -101,9 +101,9 @@
               const id = document.querySelector('#id');
               id.value = ('');
               const dateControl = document.querySelector('#id_start_time');
-              dateControl.value = arg.startStr.replace('+01:00', '');
+              dateControl.value = arg.startStr.substring(0, arg.startStr.length - 6);
               const dateControl2 = document.querySelector('#id_end_time');
-              dateControl2.value = arg.endStr.replace('+01:00', '');              
+              dateControl2.value = arg.endStr.substring(0, arg.endStr.length - 6);
             } else  {
               calendar.changeView('timeGridDay', arg.start);
             }   
@@ -147,7 +147,7 @@
                 success: (data) => {
                   const eventModal = document.getElementById('eventModal')
                   eventModal.style.display = 'none';
-                  displayMessage("Evento aggiunto");
+                  displayMessage("Dati inseriti");
                   
                   calendar.refetchEvents();
                 },
@@ -158,7 +158,7 @@
             });
       }); 
     function displayMessage(message) {
-        toastr.success(message, 'Event');
+        toastr.success(message, 'Evento');
       }
     
     function editFunc(id) {
